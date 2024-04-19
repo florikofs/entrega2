@@ -1,0 +1,62 @@
+@font-face {
+    font-family: font-titles;
+    src: url('../resources/fonts/Barlow-Regular.ttf');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    font-family: font-titles, serif;
+}
+
+
+
+
+/* NAVBAR */
+nav{
+    border-bottom: 2px rgb(216, 216, 216) solid;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    margin: 20px;
+}
+
+nav li a{
+    color: #5000ac;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+/* MAIN */
+main{
+    background: black;
+    color: white;
+    height: 400px;
+    padding: 60PX;
+}
+
+.main__div{
+    
+}
+
+button{
+    color: white;
+    background-color: #2b006f;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 30PX;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer{
+    font-size: 12px;
+}
+
