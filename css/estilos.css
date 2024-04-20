@@ -14,36 +14,39 @@ h1{
 
 
 
-
 /* NAVBAR */
 nav{
     border-bottom: 2px rgb(216, 216, 216) solid;
-    text-align: center;
+    padding: 0px 40px !important;
 }
 
 nav li{
-    display: inline-block;
     margin: 20px;
+    font-size: 18px;
 }
 
 nav li a{
-    color: #5000ac;
-    font-weight: 600;
-    text-decoration: none;
     text-transform: uppercase;
+}
+
+.container-fluid a{
+    font-family: font-titles, serif;
+    font-weight: 800;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #5c00ad;
+    font-size: 18px;
 }
 
 
 /* MAIN */
-main{
+/* Main Home */
+.main_home{
     background: black;
     color: white;
     height: 400px;
     padding: 60PX;
-}
-
-.main__div{
-    
 }
 
 button{
@@ -55,8 +58,10 @@ button{
     font-weight: 600;
 }
 
+
 /* FOOTER */
 footer{
     font-size: 12px;
+    margin: 20px 60px;
 }
 
