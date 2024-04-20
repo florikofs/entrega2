@@ -35,27 +35,49 @@ nav li a{
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #5c00ad;
+    color: #005cb3;
     font-size: 18px;
 }
 
 
 /* MAIN */
 /* Main Home */
-.main_home{
-    background: black;
+.home_main{
     color: white;
-    height: 400px;
+    height: 600px;
     padding: 60PX;
+    display: flex;
+    align-items: center;
+    background-image: url('../resources/space2.jpg');
+    background-size: cover;
+    background-position: center;
 }
-
+    
 button{
     color: white;
-    background-color: #2b006f;
-    border: none;
+    border: solid 1px white;
+    background-color: #00000025;
     border-radius: 10px;
     padding: 10px 30PX;
     font-weight: 600;
+}
+
+button:hover{
+    background-color: rgba(255, 255, 255, 0.074);
+}
+
+
+/* Main Autor */
+.autor_div{
+    display: flex;
+}
+
+.autor_div_text{
+    padding: 20px;
+}
+
+div img{
+    width: 400px;
 }
 
 
