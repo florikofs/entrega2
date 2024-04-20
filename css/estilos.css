@@ -3,38 +3,39 @@
     src: url('../resources/fonts/Barlow-Regular.ttf');
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
 
-h1{
+h1 {
     font-family: font-titles, serif;
 }
 
 
 
 /* NAVBAR */
-nav{
+nav {
     border-bottom: 2px rgb(216, 216, 216) solid;
     padding: 0px 40px !important;
 }
 
-nav li{
+nav li {
     margin: 20px;
     font-size: 18px;
 }
 
-nav li a{
+nav li a {
     text-transform: uppercase;
 }
 
-.container-fluid a{
+.container-fluid a {
     font-family: font-titles, serif;
     font-weight: 800;
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
     color: #005cb3;
     font-size: 18px;
 }
@@ -42,7 +43,7 @@ nav li a{
 
 /* MAIN */
 /* Main Home */
-.home_main{
+.home_main {
     color: white;
     height: 600px;
     padding: 60PX;
@@ -52,8 +53,8 @@ nav li a{
     background-size: cover;
     background-position: center;
 }
-    
-button{
+
+button {
     color: white;
     border: solid 1px white;
     background-color: #00000025;
@@ -62,28 +63,92 @@ button{
     font-weight: 600;
 }
 
-button:hover{
+button:hover {
     background-color: rgba(255, 255, 255, 0.074);
 }
 
 
 /* Main Autor */
-.autor_div{
+.autor_div {
     display: flex;
 }
 
-.autor_div_text{
+.autor_div_text {
     padding: 20px;
 }
 
-div img{
+div img {
     width: 400px;
+}
+
+/* Main Trilogía */
+.trilogia_main {
+    background-color: black;
+    padding: 60px 60px 80px 60px;
+}
+
+.trilogia_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    border: none;
+    margin: 20px
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h5 {
+    font-family: font-titles, serif;
+    font-weight: bolder;
+}
+
+/* Main Eventos */
+.eventos_grid {
+    display: grid;
+    grid-template-columns: repeat(3 fr);
+}
+
+
+/* Main Contacto */
+.contacto_body {
+    display: grid;
+    grid-template-columns: repeat(2 fr);
+}
+
+.contacto_text {
+    width: 400px;
+}
+
+/* Main General */
+.general_main{
+    padding: 60px;
 }
 
 
 /* FOOTER */
-footer{
+footer {
     font-size: 12px;
     margin: 20px 60px;
 }
 
+
+
+/* VER SI LO USO O NO
+.card_libros{
+    background-color: white;
+    max-width: 200px;
+    border: solid 1px gray;
+}
+
+.card_libros img{
+    max-width: 200px;
+}
+
+.card_libros h2{
+    font-size:larger;
+} */
