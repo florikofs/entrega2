@@ -1,3 +1,4 @@
+/* GENERAL */
 @font-face {
     font-family: font-titles;
     src: url('../resources/fonts/Barlow-Regular.ttf');
@@ -6,12 +7,13 @@
 * {
     margin: 0px;
     padding: 0px;
+    /* box-sizing: border-box; */
 }
 
-h1 {
+h1,
+h2 {
     font-family: font-titles, serif;
 }
-
 
 
 /* NAVBAR */
@@ -81,6 +83,7 @@ div img {
     width: 400px;
 }
 
+
 /* Main Trilogía */
 .trilogia_main {
     background-color: black;
@@ -91,6 +94,7 @@ div img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -107,12 +111,6 @@ div img {
     font-weight: bolder;
 }
 
-/* Main Eventos */
-.eventos_grid {
-    display: grid;
-    grid-template-columns: repeat(3 fr);
-}
-
 
 /* Main Contacto */
 .contacto_body {
@@ -124,8 +122,45 @@ div img {
     width: 400px;
 }
 
+
+/* Main Eventos */
+
+.eventos-proximos_section {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+}
+
+.eventos_card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 1px 1px 5px 3px #51515125;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0px 30px 30px 0px;
+    width: 250px;
+}
+
+.eventos_card h3 {
+    font-family: font-titles, serif;
+    font-weight: 700;
+}
+
+.eventos_card p {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.subinfo {
+    color: grey;
+    font-size: 20px;
+}
+
+
 /* Main General */
-.general_main{
+.general_main {
     padding: 60px;
 }
 
@@ -137,18 +172,16 @@ footer {
 }
 
 
-
-/* VER SI LO USO O NO
-.card_libros{
-    background-color: white;
-    max-width: 200px;
-    border: solid 1px gray;
+/* MEDIA QUERIES */
+/* Media Queries - Eventos */
+@media (max-width: 900px) {
+    .eventos-proximos_section {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-.card_libros img{
-    max-width: 200px;
+@media (max-width: 600px) {
+    .eventos-proximos_section {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
-
-.card_libros h2{
-    font-size:larger;
-} */
