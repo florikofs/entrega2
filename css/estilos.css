@@ -112,17 +112,6 @@ div img {
 }
 
 
-/* Main Contacto */
-.contacto_body {
-    display: grid;
-    grid-template-columns: repeat(2 fr);
-}
-
-.contacto_text {
-    width: 400px;
-}
-
-
 /* Main Eventos */
 
 .eventos-proximos_section {
@@ -159,6 +148,17 @@ div img {
 }
 
 
+/* Main Contacto */
+.contacto_body {
+    display: grid;
+    grid-template-columns: 500px 400px;
+}
+
+.contacto_form{
+    margin-left: 30px;
+}
+
+
 /* Main General */
 .general_main {
     padding: 60px;
@@ -183,5 +183,18 @@ footer {
 @media (max-width: 600px) {
     .eventos-proximos_section {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 960px) {
+.contacto_body {
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 960px) {
+.contacto_form{
+    margin-left: 0px;
+    max-width: 400px;
     }
 }
